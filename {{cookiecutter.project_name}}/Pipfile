@@ -26,6 +26,7 @@ django-http-referrer-policy = "*"
 django-ipware = "*"
 django-split-settings = "*"
 django-stubs = "*"
+bcrypt = "*"
 
 [dev-packages]
 pip = "*"
