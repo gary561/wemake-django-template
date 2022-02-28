@@ -81,17 +81,17 @@ WSGI_APPLICATION = 'server.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('POSTGRES_DB'),
-        'USER': config('POSTGRES_USER'),
-        'PASSWORD': config('POSTGRES_PASSWORD'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config('MYSQL_DB'),
+        'USER': config('MYSQL_USER'),
+        'PASSWORD': config('MYSQL_PASSWORD'),
         'HOST': config('DJANGO_DATABASE_HOST'),
         'PORT': config('DJANGO_DATABASE_PORT', cast=int),
-        'CONN_MAX_AGE': config('CONN_MAX_AGE', cast=int, default=60),
-        'OPTIONS': {
-            'connect_timeout': 10,
-            'options': '-c statement_timeout=15000ms',
-        },
+        #'CONN_MAX_AGE': config('CONN_MAX_AGE', cast=int, default=60),
+        #'OPTIONS': {
+        #    'connect_timeout': 10,
+        #    'options': '-c statement_timeout=15000ms',
+        #},
     },
 }
 
@@ -99,14 +99,14 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
-USE_I18N = True
+USE_I18N = False
 USE_L10N = True
 
 LANGUAGES = (
     ('en', _('English')),
-    ('ru', _('Russian')),
+    ('zh-cn', (u'简体中文')),
 )
 
 LOCALE_PATHS = (
@@ -114,7 +114,7 @@ LOCALE_PATHS = (
 )
 
 USE_TZ = True
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 
 # Static files (CSS, JavaScript, Images)

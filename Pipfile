@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+jinja2 = "==3.0.3"
+jinja2-git = "*"
+cookiecutter = "*"
+
+[requires]
+python_version = "3.8"

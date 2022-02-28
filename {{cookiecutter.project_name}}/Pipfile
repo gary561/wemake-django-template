@@ -1,0 +1,36 @@
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jinja2 = "==3.0.3"
+django = "*"
+django-stubs-ext = "*"
+split-settings = "*"
+python-decouple = "*"
+structlog = "*"
+django-axes = "*"
+django-health-check = "*"
+django-debug-toolbar = "*"
+nplusone = "*"
+django-migration-linter = "*"
+django-test-migrations = "*"
+django-extra-checks = "*"
+mysqlclient = "*"
+django-querycount = "*"
+django-permissions-policy = "*"
+django-csp = "*"
+django-coverage-plugin = "*"
+django-http-referrer-policy = "*"
+django-ipware = "*"
+django-split-settings = "*"
+django-stubs = "*"
+
+[dev-packages]
+pip = "*"
+jinja2-git = "*"
+cookiecutter = "*"
+
+[requires]
+python_version = "3.8"
